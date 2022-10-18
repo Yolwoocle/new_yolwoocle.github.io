@@ -12,6 +12,8 @@
             font-family: 'Nunito', sans-serif;
             padding: 0px;
             margin: 0px;
+            background-color: #A8CF6B;
+            color: #193d3f
         }
 
         h1{
@@ -19,25 +21,122 @@
             /* border: 2px solid red; */
         }
 
+        a{
+            text-decoration: none;
+        }
+
+        .mainContent {
+            width: 100%;
+            height: 100vh;
+            /* border: 2px solid red; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         .titleContainer{
-            align-content: center;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
             margin: 0px;
-            margin-top: 10vh;
+            margin-top: 100px;
             /* border: 2px solid rgb(24, 255, 3); */
         }
         .title{
-            font-size: 10vw;
+            font-size: 90px;
             margin-top: 0px;
             margin-bottom: 0px;
             /* border: 2px solid rgb(23, 123, 60); */
+        }
+        .subtitle{
+            font-size: 45px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            /* border: 2px solid rgb(23, 123, 60); */
+        }
+        .aboutMe{
+            font-size: 30px;
+            text-align: center;
+            width: 200px;
+            padding: 5px;
+            
+            border-width: 5px;
+            border-radius: 40px;
+        }
+
+        .button {
+            background-color: #b86f50;
+            border-style: solid;
+            border-color: #b86f50;
+            
+            color: #ead4aa;
+            
+            text-align: center;
+            justify-content: center;
+  	        align-items: center;
+            
+            position: relative;
+            top: 0;
+            box-shadow: 
+                0px 2px 0px #743f39,
+                0px 5px 0px #743f39,
+                0px 7px 0px #743f39,
+                0px 10px 0px #743f39;
+            transition: 
+                top ease 0.2s,
+                box-shadow ease 0.2s;
+        }
+        .button:hover {
+            position: relative; 
+            top: -10px;
+            box-shadow: 
+                0px 5px 0px #743f39,
+                0px 10px 0px #743f39,
+                0px 15px 0px #743f39,
+                0px 20px 0px #743f39;
+        }
+
+        .categoriesContainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            margin-bottom: 200px;
+            
+            /* border: 2px solid rgb(16, 123, 78) */
+        }
+        .category {
+            display: flex;
+
+            width: 300px;
+            height: 90px;
+            font-size: 50px;
+            padding: 20px;
+
+            border-width: 10px;
+            border-radius: 100px;
         }
     </style>
 </head>
 
 <body>
-    <div class="page">
+    <div class="mainContent">
         <div class="titleContainer">
             <h1 class="title">Yolwoocle</h1>
+            <h2 class="subtitle">Léo Bernard</h2>
+            <h3 class="button aboutMe">About Me</h3>
+        </div>
+        <div class="categoriesContainer">
+            <a class="category button" href="games.art">
+                <h3>Art</h3>
+            </a>
+            <a class="category button" href="games.html">
+                <h3>Games</h3>
+            </a>
+            <!-- <h3>INCROYABLE</h3> -->
         </div>
     </div>
 </body>
