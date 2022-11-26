@@ -1,0 +1,53 @@
+body{ 
+    /* background-image: linear-gradient(135deg, #b55088 25%, #99477e 25%, #99477e 50%, #b55088 50%, #b55088 75%, #99477e 75%, #99477e 100%); */
+    background-image: linear-gradient(135deg, #9f83bd 25%, #c18bbd 25%, #c18bbd 50%, #9f83bd 50%, #9f83bd 75%, #c18bbd 75%, #c18bbd 100%);
+    background-size: 181.02px 181.02px;
+    /* background-image: linear-gradient(135deg, #a8cf6b 25%, #95c364 25%, #95c364 50%, #a8cf6b 50%, #a8cf6b 75%, #95c364 75%, #95c364 100%);
+    background-size: 64.02px 64.02px; */
+
+}
+
+h1{
+    color: #3b223d;
+    text-align: center;
+    text-shadow: 
+        0px 2px 0px #231325,
+        0px 4px 0px #231325,
+        0px 6px 0px #231325,
+        0px 8px 0px #231325,
+        3px 11px 0px #00000074;
+        /* border: 2px solid red; */
+    
+    position: relative;
+    top: 0;
+    transition: 
+        top ease 0.2s,
+        text-shadow ease 0.2s;
+}
+a>h1:hover {
+    top: -2px;
+    text-shadow: 
+        0px 2px 0px #231325,
+        0px 5px 0px #231325,
+        0px 7px 0px #231325,
+        0px 10px 0px #231325,
+        5px 13px 0px #00000074;
+        /* border: 2px solid red; */
+}
+
+h2{
+    color: #49244e;
+}
+
+.artContent {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    align-items: center;
+}
+
+.drawingsGrid {
+    border: 1px solid red;
+    margin-top: 50px;
+    width: 70vw;
+}

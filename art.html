@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/art.css">
+    <link rel="stylesheet" href="./css/card.css">
     <link rel="icon" type="image/png" href="img/icon.png">
 </head>
 
@@ -17,51 +18,35 @@
         <a href="index.html" class="h1link"><h1 class="title">Yolwoocle</h1></a>
         <h2 class="subtitle">Art</h2>
 
-        <div class="cardGrid">
-            
-            <div class="card">
-                <div class="cardImageContainer">
-                    <img src="./img/art/DoodleArtVertical.png">
-                </div>
-                <h2>Hello</h2>
-                <p>Description here</p>
-            </div>
-            
-            <div class="card">
-                <div class="cardImageContainer">
-                    <img src="./img/art/DoodleArtVertical.png">
-                </div>
-                <h2>Hello</h2>
-                <p>Description here</p>
-            </div>
-            
-            <div class="card">
-                <div class="cardImageContainer">
-                    <img src="./img/art/DoodleArtVertical.png">
-                </div>
-                <h2>Hello</h2>
-                <p>Description here</p>
-            </div>
-            
-            <div class="card">
-                <div class="cardImageContainer">
-                    <img src="./img/art/DoodleArtVertical.png">
-                </div>
-                <h2>Hello</h2>
-                <p>Description here</p>
-            </div>
-            
-            <div class="card">
-                <div class="cardImageContainer">
-                    <img src="./img/art/DoodleArtVertical.png">
-                </div>
-                <h2>Hello</h2>
-                <p>Description here</p>
-            </div>
-
-            
+        <div class="cardGrid" id="cardGridId">
+                 
         </div>        
     </div>
     
+    <div class="cardViewerContainer" id="cardViewerId">
+        
+        <div class="cardViewerInterface" id="cardViewerInterfaceId">
+            <div class="cardViewerButton left center" onclick="previousImage()">
+                <img src="img/icons/left.svg">
+            </div>
+            <div class="cardViewer paper">
+
+                <div class="quitButton cardViewerButton" onclick="closeImageViewer()">
+                    <img src="img/icons/quit.svg">
+                </div>
+                
+                <!-- <img src="./img/art/DoodleArtVertical.png"> -->
+                <img id="imageViewerImageId" src="./img/art/dino_sleeping17.gif">
+                <!-- <img src="./img/art/pigeons_NOT_WATERMARKED_23-oct_V3.png"> -->
+                <h2 id="imageViewerTitleId">Title</h2>
+                <p id="imageViewerDescriptionId">Description</p>
+                
+            </div>
+            <div class="cardViewerButton right center " onclick="nextImage()">
+                <img src="img/icons/right.svg">
+            </div>
+        </div>
+    </div>
+
     <script src="./js/art.js"></script>
 </body>
